@@ -1,0 +1,133 @@
+<html>
+    <head>
+        <title>Lesson 2</title>
+        <style>
+            /* Comments in CSS */
+            /*
+                comments in CSS is always multi-line
+                -> do not put html elements in CSS <style>
+            */
+            /* 
+                Margin and Padding
+                margin: 5px; (use px or em for units) (1em = 15px) (creates space outside of an html element)
+                padding: 5px; (use px or em for units) (creates spaces inside of an html element)
+            */
+            /* CSS rule is either name of our html element (e.g. div, h1) or id/class */
+            #div1 {
+                margin: 20px;
+                padding: 10px;
+                text-align: center;
+
+            }
+
+            /* to call an HTML id attribute use # */
+            #hello-world {
+                color: red;
+            }
+            
+            /* to call an HTML class attribute use . (dot, period) */
+            .italic {
+                font-style: italic;
+            }
+
+            /* to center a div, use margin: auto; */
+            #div2{
+                margin: auto;
+                margin-top: 50px;
+                padding: 50px;
+                border-radius: 500px;
+                /* Background
+                    background: red
+                    background-color: red 
+                */
+                background: rgb(235, 242, 32);
+                height: 100px;
+                width: 100px;
+            }
+
+            #pfp{
+                height: 500px;
+                width: 900px;
+            }
+    
+            
+        </style>
+    </head>
+    <body>
+        <!-- 
+            to include links
+            <a>Text here</a>
+            attributes required:
+            <a href=""></a>
+            target:
+            - _blank (new tab)
+            - _parent (default)
+            - _self (default; same as parent)
+            - _top (same as parent)
+            <a href="" target=""></a>
+        -->
+        <h1>HTML LINK</h1>
+        <a class="italic" href="https://google.com/" target="_blank">Go to Google website</a>
+
+        <!-- Division (div HTML tags) 
+            <div></div>
+            attributes includes:
+            class, id, style
+
+            <div> is for layouting our website
+            <div> requires CSS (Cascading Stylesheet) to control it
+            <div> is a container of multiple html elements including itself
+        -->
+        <!-- CSS
+            -> is the one that apply designs to our website
+        3 ways to apply CSS:
+        1. in-page <style></style>
+        2. in-line in html tags (attributes) <div style="">
+        3. different file (.css file extension)
+        -->
+        <!-- CSS Properties included in this lesson:
+            -> CSS properties repeating might work, but mostly it won't (whichever is placed last will apply that property)
+            1. flex
+            2. background
+            3. font
+            4. borders
+            5. text
+            6. padding
+            7. margins
+         -->
+        <!-- Borders:
+            shorthand: 
+            border: border-width border-style border-color
+        -->
+
+        <!-- ID and Class Attributes
+            => ID attribute are unique per HTML element; ID can be applied to multiple HTML element, but you need to have different names per ID
+            => use class attribute to apply to multiple HTML element.
+        -->
+        
+        <div id="div1"
+            style="border: 2px solid black; border-radius: 150px;"
+        >
+            <h1 
+                style="border-bottom: 2px dotted black;" 
+                id="hello-world"
+            >
+                Hello world!
+            </h1>
+            <p class="italic">Hello I am centered <br/> Centered</p>
+            
+        </div>
+
+        <!-- In page CSS
+            -> place the <style> html element inside <head> html element
+        -->
+        <div id="div2"></div>
+    </body>
+</html>
+<div style="text-align: center; margin-top: 50px;">
+    <img id="pfp"
+    src="https://i.pinimg.com/736x/41/a4/0e/41a40e9e4679d415db6da743f78cd862.jpg"> 
+    
+    </body>
+</html>
+
