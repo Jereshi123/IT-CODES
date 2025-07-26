@@ -1,75 +1,57 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Colored Grid Layout</title>
-<style>
-  body {
-    margin: 20px;
-  }
-  .container {
-    display: grid;
-    grid-template-columns: 4fr 1fr 1fr;
-    grid-template-rows: 1fr 2fr 1fr;
-    gap: 2px;
-    width: 400px;
-    height: 300px;
-    border: 2px solid black;
-  }
-  .yellow {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-    background-color: #FFFF99;
-    border: 1px solid black;
-  }
-  .green1 {
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
-    background-color: #00FF00;
-    border: 1px solid black;
-  }
-  .green2 {
-    grid-column: 3 / 4;
-    grid-row: 1 / 2;
-    background-color: #00FF00;
-    border: 1px solid black;
-  }
-  .red {
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
-    background-color: #FF0000;
-    border: 1px solid black;
-  }
-  .orange {
-    grid-column: 2 / 4;
-    grid-row: 2 / 3;
-    background-color: #FF7F50;
-    border: 1px solid black;
-  }
-  .blue {
-    grid-column: 1 / 2;
-    grid-row: 3 / 4;
-    background-color: #0000FF;
-    border: 1px solid black;
-  }
-  .white {
-    grid-column: 2 / 4;
-    grid-row: 3 / 4;
-    background-color: #FFFFFF;
-    border: 1px solid black;
-  }
-</style>
+    <link rel="stylesheet" href="css/Poz.css"/>
+    <title>ACTIVITY #3 CSS ANIMATIONS :></title>
 </head>
 <body>
-  <div class="container">
-    <div class="yellow"></div>
-    <div class="green1"></div>
-    <div class="green2"></div>
-    <div class="red"></div>
-    <div class="orange"></div>
-    <div class="blue"></div>
-    <div class="white"></div>
-  </div>
+    <style>
+        body{
+            background-image: url("https://c4.wallpaperflare.com/wallpaper/714/306/328/death-note-l-white-background-1024x768-anime-death-note-hd-art-wallpaper-preview.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+    
+        }
+    </style>
+
+    <h1>"Hello! Welcome to my Animation Museum!" (activity 3 CSS)</h1>
+ 
+     <section id="fade">
+    <h2 style="color: brown;">1. Fade Effect "Tyler The Creator"</h2>
+    <div class="fade-box"></div>
+    <img src="https://w7.pngwing.com/pngs/610/982/png-transparent-tyler-the-creator-south-by-southwest-austin-mug-shot-arrest-mug-shot-miscellaneous-head-musician-thumbnail.png" alt="Tyler the Goat" class="fade-box">
+  </section>
+  
+  <section id="loader">
+    <h2 style="color: brown;"> 2. Wavy Ball Loader "Shedletsky"</h2>
+    <div class="loader">
+      <img src="https://tr.rbxcdn.com/180DAY-d28591632f00311633623e8217eee91c/420/420/Hat/Webp/noFilter" alt="ball1" class="Wavy-ball ">
+      <img src="https://tr.rbxcdn.com/180DAY-d28591632f00311633623e8217eee91c/420/420/Hat/Webp/noFilter" alt="ball2" class="Wavy-ball">
+      <img src="https://tr.rbxcdn.com/180DAY-d28591632f00311633623e8217eee91c/420/420/Hat/Webp/noFilter" alt="ball3" class="Wavy-ball">
+      <img src="https://tr.rbxcdn.com/180DAY-d28591632f00311633623e8217eee91c/420/420/Hat/Webp/noFilter" alt="ball4" class="Wavy-ball">
+      <img src="https://tr.rbxcdn.com/180DAY-d28591632f00311633623e8217eee91c/420/420/Hat/Webp/noFilter" alt="ball5" class="Wavy-ball">
+      <img src="https://tr.rbxcdn.com/180DAY-d28591632f00311633623e8217eee91c/420/420/Hat/Webp/noFilter" alt="ball6" class="Wavy-ball">
+      <img src="https://tr.rbxcdn.com/180DAY-d28591632f00311633623e8217eee91c/420/420/Hat/Webp/noFilter" alt="ball7" class="Wavy-ball">
+      <img src="https://tr.rbxcdn.com/180DAY-d28591632f00311633623e8217eee91c/420/420/Hat/Webp/noFilter" alt="ball8" class="Wavy-ball">
+    </div>
+  </section>
+
+  <section id="zoom">
+    <h2 style="color: brown;">3. Zoom Effect "Lebron James Goofy"</h2>
+    <div class="zoom-box"></div>
+    <img src="https://media.tenor.com/fXCRnSStpicAAAAe/kingspointe.png" alt="lebooboo" class="zoom-box">
+  </section>
+
+  <section id="custom">
+    <h2 style="color: cornflowerblue;">4. MY OWN ANIMATION :> (spin alternate)</h2>
+    <div class="meme-container">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoLZ0xssMgXMsf-GvpEyvoVC4lEjoEswmTqQ&s" alt="Waguri" class="custom-spin">
+        <img src="https://w0.peakpx.com/wallpaper/194/959/HD-wallpaper-tanaka-anime-funny-anime-haikyuu-tanaka-buddha-thumbnail.jpg" alt="Haikyuu ahh character" class="custom-spin">
+        <img src="https://i1.sndcdn.com/artworks-tX9EefrkRA1KhN5D-8tA0DA-t240x240.jpg" alt="Gojo" class="custom-spin">
+        <img src="https://i.pinimg.com/736x/57/ea/d4/57ead4ab8f8c0e9e3b8e01cb334510d1.jpg" alt="tyler" class="custom-spin">
+    </div>
+  </section>
+    
 </body>
 </html>
+

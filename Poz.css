@@ -1,0 +1,85 @@
+/*fade in effect*/
+
+.fade-box {
+  animation-name: fadeIn;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  width: 320px;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/*Bounce Balls*/
+.loader {
+  display: flex;
+  gap: 10px;
+  justify-content: left;
+  align-items: center;
+}
+
+.Wavy-ball {
+  width: 60px;
+  height: 60px;
+  animation: bounce 0.8s infinite alternate;
+}
+
+.Wavy-ball:nth-child(2) { animation-delay: 0.1s; }
+.Wavy-ball:nth-child(3) { animation-delay: 0.2s; }
+.Wavy-ball:nth-child(4) { animation-delay: 0.3s; }
+.Wavy-ball:nth-child(5) { animation-delay: 0.4s; }
+.Wavy-ball:nth-child(6) { animation-delay: 0.5s; }
+.Wavy-ball:nth-child(7) { animation-delay: 0.6s; }
+.Wavy-ball:nth-child(8) { animation-delay: 0.7s; }
+
+@keyframes bounce {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-30px); }
+
+}
+
+/* Zooming Lebooboo */
+.zoom-box {
+  animation-name: zoomIn;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  width: 200px;
+  opacity: 0;
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+}
+
+/*My custom Animation */
+.custom-spin {
+  width: 120px;
+  height: 120px;
+  display: inline-block;
+  margin: 0 auto;
+  animation: spin-meme 2s infinite alternate;
+}
+
+@keyframes spin-meme {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+  
+
+
+
+
